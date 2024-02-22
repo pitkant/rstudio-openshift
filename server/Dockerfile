@@ -16,7 +16,7 @@ ENV TZ="Europe/Helsinki" \
 RUN apt-get -y update
 RUN apt-get install -y libnss-wrapper  gettext vim strace
 
-RUN apt-get install -y libudunits2-dev libgdal-dev libgeos-dev libproj-dev
+RUN apt-get install -y libudunits2-dev libgdal-dev libgeos-dev libproj-dev librdf0-dev
 
 # rstudio needs write permissions to sqlite
 RUN chgrp -R 0 /var/lib/rstudio-server/ && \
